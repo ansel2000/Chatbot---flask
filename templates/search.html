@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+</head>
+<body>
+<script>
+<!--    $.get("/get", { msg: rawText }).done(function(data) {-->
+            {% for i in link %}
+             var botHtml = '<p class="botText"><span>' + i + '</span></p>';
+             $("#chatbox").append(botHtml);
+            {% endfor %}
+<!--           );-->
+</script>
+</body>
+</html>
